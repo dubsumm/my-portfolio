@@ -1,0 +1,239 @@
+:root {
+    /* declares a variable with `--` syntax */
+    --headerColor: black;
+    --mobileHeadercolor: #5b80fa;
+    --navLinkcolor: white;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    position: fixed;
+    width:100%;
+    height:100px;
+    display: block;
+    background-color:var(--headerColor);
+
+}
+
+.innerHeader{
+    width: 75%;
+    height: 100%;
+    display: block;
+    
+    background-color:var(--headerColor);
+    margin:0 auto ;
+}
+.logoContainer {
+    height: 100%;
+    display: flex;
+    float: left;
+
+}
+
+.logoContainer h1{
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;    font-size: 32px;
+    font-weight: 200;
+    
+}
+.logoContainer span {
+    color: rgb(81, 234, 160);
+    font-weight: 900;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation li{  
+    float: left;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.navigation li:last-child{  
+    padding-right: 0%;
+}
+
+.navigation li a{  
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: var(--navLinkcolor);
+    font-family: 'Roboto', sans-serif;    font-size: 18px;
+}
+
+.hero {
+    height: 60em;
+    width: 100%;
+    background-image: url("../images/neon-me.JPG") ;
+    background-size: cover;
+    background-position: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+main {
+    background-color: #d10cb0;
+    width: 100%;
+   
+}
+
+.float-left {
+    float: left;
+    margin-right: 2.5em;
+}
+
+.float-right {
+    float: right;
+    margin-left: 2.5em;
+}
+
+
+.about {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 2em;
+    height: 20em;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: #ffffff;
+    
+}
+
+.about img {
+    max-height: 90%;
+    box-sizing: border-box;
+    border-radius: 25%;
+    box-shadow:15px -15px 10px 1px #021983;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.facts li{
+    margin-left: 3em;
+    list-style:circle
+}
+
+.portfolio {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 2em;
+    height: 20em;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+
+
+.portfolio h2 {
+    
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.contact {
+    
+    width: 80%;
+    margin: 0 auto; 
+    padding: 2em;
+    height: 10em;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: #ffffff;
+    
+}
+
+.contact img {
+    max-height: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-items: end;
+    box-sizing: border-box;
+    border-radius: 25%;
+    box-shadow:15px -15px 10px 1px #021983;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.contact a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+footer {
+    height: 100px;
+    background-color: #5b80fa;
+}
+.the-lowest{
+    background-color: #5b80fa;
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.the-lowest span{
+    color: white;
+}
+
+.the-lowest li{
+    text-align: right;
+    display: inline;
+    color: #5b80fa;
+}
+.the-lowest a{ 
+    color: #5b80fa;
+}
+.the-lowest:hover a{
+    color: black;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .header {
+      background-color: var(--mobileHeadercolor);
+    }
+
+    .innerHeader {
+        width: 100%;
+      background-color: var(--mobileHeadercolor);
+    }
+
+    .navigation li:last-child{  
+        padding-right: 5px%;
+    }
+
+    .about {
+        height: 30em;
+    }
+    .about img {
+        height:60%;
+        display: flex;
+    }
+
+    h1 span {
+        color: rgb(0, 8, 5);
+    }
+  }
+  
